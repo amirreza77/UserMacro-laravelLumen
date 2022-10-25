@@ -2,6 +2,12 @@
 This is in depended system for user management by lumen Laravel . this system designed for both verification email and SMS.
 In the first step user could register and then you could decide which approach is appropriate for you to verify her/him 
 
+********************************************************
+###Do Not Forget To
+1- change your env file based on your database and email server confi
+2- migrate db `php artisan migrate`
+********************************************************
+
 first install lumen of use this Repo have fun!
 
 # Endpoints 
