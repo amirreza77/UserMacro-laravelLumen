@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "68d1031e-f004-4a34-90a3-87d5ee5bfd79",
+		"name": "User Api",
+		"description": "This is in depended system for user management by lumen Laravel . this system designed for both verification email and SMS.  \nIn the first step user could register and then you could decide which approach is appropriate for you to verify her/him",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1821620"
+	},
+	"item": [
+		{
+			"name": "User Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "امیررضاتهرانی",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "cellphone",
+							"value": "09123025356",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "آدرس",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "validate",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/add/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"add",
+						""
+					]
+				},
+				"description": "users/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Validate Code To Cellphone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cellphone",
+							"value": "09123025356",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/validatebycell/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"validatebycell",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm Validated Code By CellPhone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cellphone",
+							"value": "09123025356",
+							"type": "text"
+						},
+						{
+							"key": "vcode",
+							"value": "3749",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/validatecode/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"validatecode",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "myjoomina",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "a3025356",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "9123025356",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "500010006354349",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "سلام",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/userlogin/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"userlogin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "04b7e02a0098bd576b8edc013fd83b67",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "امیررضاتهرانی",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "آدرس",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "email",
+							"value": "amirrezatehrani@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "04b7e02a0098bd576b8edc013fd83b67",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/edit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"edit",
+						""
+					]
+				},
+				"description": "users/add"
+			},
+			"response": []
+		},
+		{
+			"name": "verify email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/lwup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"lwup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
