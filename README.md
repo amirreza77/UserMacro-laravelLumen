@@ -27,6 +27,11 @@ all request using of Endpoints
 # 1 - Add User 
 simply add user in the first step by calling /user/add with belo value
 
+```http
+  POST /user/add/
+```
+
+
 ```sh
 name
 username
