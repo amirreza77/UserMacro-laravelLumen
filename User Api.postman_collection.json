@@ -17,7 +17,7 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "امیررضاتهرانی",
+							"value": "YouName",
 							"type": "text"
 						},
 						{
@@ -32,12 +32,12 @@
 						},
 						{
 							"key": "cellphone",
-							"value": "09123025356",
+							"value": "0912xxxxxxx",
 							"type": "text"
 						},
 						{
 							"key": "address",
-							"value": "آدرس",
+							"value": "yourADD",
 							"type": "text"
 						},
 						{
@@ -85,7 +85,7 @@
 					"formdata": [
 						{
 							"key": "cellphone",
-							"value": "09123025356",
+							"value": "0912xxxxxxx",
 							"type": "text"
 						}
 					]
@@ -116,7 +116,7 @@
 					"formdata": [
 						{
 							"key": "cellphone",
-							"value": "09123025356",
+							"value": "0912xxxxxxx",
 							"type": "text"
 						},
 						{
@@ -152,27 +152,27 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "myjoomina",
+							"value": "username",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "a3025356",
+							"value": "pass",
 							"type": "text"
 						},
 						{
 							"key": "to",
-							"value": "9123025356",
+							"value": "xxxxxxx",
 							"type": "text"
 						},
 						{
 							"key": "from",
-							"value": "500010006354349",
+							"value": "000000000000",
 							"type": "text"
 						},
 						{
 							"key": "text",
-							"value": "سلام",
+							"value": "text",
 							"type": "text"
 						}
 					]
@@ -233,7 +233,7 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "امیررضاتهرانی",
+							"value": "YouName",
 							"type": "text"
 						},
 						{
@@ -248,7 +248,7 @@
 						},
 						{
 							"key": "address",
-							"value": "آدرس",
+							"value": "yourADD",
 							"type": "text"
 						},
 						{
@@ -258,7 +258,7 @@
 						},
 						{
 							"key": "email",
-							"value": "amirrezatehrani@gmail.com",
+							"value": "YourEmail@Domain.com",
 							"type": "text"
 						},
 						{
