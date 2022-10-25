@@ -12,7 +12,7 @@ In the first step user could register and then you could decide which approach i
 ********************************************************
 ### Do Not Forget To
 
- change your env file based on your database and email server confi
+ change your env file based on your database and email server config
  
 ********************************************************
 
@@ -51,7 +51,15 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => array('name' => 'amirreza','username' => 'admin','password' => '123456','cellphone' => '09123025356','address' => 'آدرس','avatar' => '','email' => 'youremail@gmail.com'),
+  CURLOPT_POSTFIELDS => array(
+  'name' => 'amirreza',
+  'username' => 'admin',
+  'password' => '123456',
+  'cellphone' => '0912xxxxxx',
+  'address' => 'YourAdd',
+  'avatar' => '',
+  'email' => 'youremail@gmail.com'
+  ),
 ));
 
 $response = curl_exec($curl);
